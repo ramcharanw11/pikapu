@@ -1,0 +1,174 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+/* Top Bar Styling */
+.navbar-custom {
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+.navbar-custom span {
+  color: white;
+  font-weight: bold;
+}
+/* Navigation Styling */
+.navbar-custom .nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+.navbar-custom .nav-link.active {
+  text-decoration: underline;
+}
+/* Background and Hero Section */
+.hero {
+  background: url('background.jpg') no-repeat center center/cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: black;
+}
+/* Hero Text Styling */
+.hero h1 {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.hero p {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+/* Button Styling */
+.btn-custom {
+  border: 1px solid white;
+  color: white;
+  padding: 0.75rem 2rem;
+  margin: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.btn-custom:hover {
+  background-color: white;
+  color: black;
+}
+/* About & Flavors Sections */
+.section {
+  padding: 60px 0;
+}
+.about-section, .flavors-section {
+  background-color: #111;
+}
+.about-content, .flavors-content {
+  color: white;
+  max-width: 700px;
+  font-size: 1.2rem; /* Increase font size for readability */
+  line-height: 1.6;
+}
+.about-content h2, .flavors-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.image-container {
+  width: 100%; /* Fluid width */
+  max-width: 300px; /* Limit max width */
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222; /* Background color for the box */
+  margin: 1rem; /* Margin for spacing */
+}
+.about-image, .flavors-image {
+  width: 100%; /* Full width of container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the entire container */
+}
+/* Artisanal Coffee Section */
+.coffee-section {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+.coffee-section h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+.coffee-section p {
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+.coffee-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* Gallery Section */
+.gallery {
+  display: flex;
+  justify-content: center; /* Center the gallery items */
+  margin-top: 2em;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+.gallery-item {
+  width: 30%; /* Each item will take up 30% of the container */
+  height: 200px; /* Fixed height for consistency */
+  background-color: #eee; /* Placeholder background color */
+  background-size: cover; /* Ensure the image covers the entire div */
+  margin: 0.5rem; /* Space between items */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .gallery-item {
+      width: 45%; /* Adjust width for medium screens */
+      height: 150px; /* Adjust height */
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-item {
+      width: 90%; /* Full width for small screens */
+      height: 120px; /* Adjust height */
+  }
+}
+
+/* Footer Styling */
+footer {
+color:black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+.footer-contact {
+  flex: 1;
+  padding-right: 20px; /* Added padding for spacing */
+}
+.footer-contact p {
+  font-weight: bold; /* Increased boldness */
+  margin: 0; /* Remove default margin */
+}
+.footer-image {
+  flex: 0 0 200px;
+  height: 150px;
+  overflow: hidden;
+}
+.footer-image img {
+  width: 200px; /* Adjusted width */
+  height: 150px; /* Adjusted height */
+  object-fit: cover;
+}
